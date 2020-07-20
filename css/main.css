@@ -53,9 +53,10 @@ body {
 
 .container{
     max-width: 600px;
-    min-height: 566px;
-    margin: 5rem auto;
+    min-height: 490px;
+    margin:5.5rem auto;
     border-radius: 10px;
+    overflow: auto;
 }
 /*entire container for login-signup form */
 #login-container {
@@ -73,7 +74,7 @@ body {
 
 /* profile-container */
 #profile-container{
-    max-width: 400px !important;
+    max-width: 380px !important;
     background-color:powderblue;
     padding: 0;
     margin: 7rem auto !important;
@@ -85,7 +86,7 @@ body {
 
 /* only form out of container */
 #form-box {
-    min-height: 566px;
+    min-height: 490px;
     padding: 1.6rem 2.4rem 1.6rem 1.6rem;
     float: right;
     width: 70%;
@@ -173,7 +174,7 @@ a:hover{
 /* user-list*/
 #list{
     background-color: #fff;
-    min-height: 480px;
+    min-height: 410px;
     border-radius: 0 0 10px 10px;
     color: #333;
     padding:0.7rem 0.5rem;
@@ -213,8 +214,8 @@ a:hover{
 
 /* profile-pic */
 #profile-pic{
-    height: 50%;
-    width: 50%;
+    height: 45%;
+    width: 45%;
     margin:1rem 0;
     padding:2rem;
     border-radius: 50%;
@@ -240,23 +241,23 @@ img{
     padding-left: 0.6rem;
 }
 #profile-info > div{
-    margin:0.9rem 0.2rem;
+    margin:0.8rem 0.2rem;
 }
 
 /* user-name */
 #name{
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: 500;
-    line-height: 1.9;
+    line-height: 1.8;
     padding-left: 1.6rem;
     margin-bottom: 0.3rem;
 }
 
 .info-placing{
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 400;
-    line-height: 1.8;
-    margin: 0 0 3rem 2rem;
+    line-height: 1.7;
+    margin: 0 0 2.8rem 2rem;
 }
 
 /* Operate Buttons */
@@ -266,8 +267,8 @@ img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding:1rem;
-    margin:0 2rem;
+    padding:0.9rem;
+    margin:0 1.8rem;
     background-color: #5a5223ec;
     border-radius:0 0 10px 10px;
 }
