@@ -1,0 +1,57 @@
+@media (max-width:500px){
+    .container{
+        max-width: 450px; 
+        min-height: 660px;  
+        margin:2.5rem auto;
+    }
+    #login-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #profile-container{
+        min-height: 571px !important;
+    }
+    .logo{
+        margin-bottom: 1rem;
+    }
+    .title{
+        justify-self: center;
+        text-align: center;
+    }
+    #form-box{
+        width:100%;
+        height: 567px;
+        padding:0;
+        border-radius: 0 0 10px 10px;
+        float:center;
+        justify-content: space-around;
+    }
+    .btn-login{
+    float: left;
+      position: relative;
+      left: 30%;
+    }
+
+    #list{
+        min-height: 573px;
+    }
+    #client-name{
+        font-size: 1rem;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    #client-city{
+        margin-right: 1.4rem;
+        font-weight: 300;
+        line-height: 1.4;
+        font-size: 0.8rem;
+    }
+
+    #profile-pic{
+        height: 60%;
+        width: 60%;
+        padding: 2.4rem;
+    }
+}

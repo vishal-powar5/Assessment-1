@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script src="./js/font-awesome.js"></script>
+
+</head>
+
+<body>
+    <div id="login-container" class="container">
+        <span class="logo"><i class="fas fa-moon fa-3x"></i></span>
+        <div id="form-box">
+            <div class="title">
+                <h1><span class="light-color"> We Are </span>NUVA</h1>
+                <p class="subtitle">Welcome to our family! Sign up & create your account to view your clients.</p>
+            </div>
+            <form action="#" onsubmit="event.preventDefault()" id="form">
+                <div class="form-content">
+                    <i class="icon far fa-envelope fa-2x"></i>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input class="input-field click" type="email" name="email" id="email" required />
+                    </div>
+                    <i class="icon fa fa-lock fa-2x"></i>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input class="input-field click" type="password" name="password" id="password" minlength="8"
+                            required />
+                    </div>
+                    <i class="icon far fa-calendar fa-2x"></i>
+                    <div class="form-group">
+                        <label for="dob">Date ofBirth:</label>
+                        <input class="input-field click" type="Date" name="dob" id="dob" required />
+                    </div>
+                    <i class="icon fa fa-users fa-2x"></i>
+                    <div class="form-group">
+                        <label for="position">Position:</label>
+                        <select class="input-field click" name="position" id="position" required>
+                            <option value="">Select position</option>
+                            <option value="admin">Admin</option>
+                            <option value="user">User</option>
+                            <option value="employee">Employee</option>
+                        </select>
+                    </div>
+                </div>
+                <input class="btn btn-login" type="submit" value="Sign Up" id="signup-submit" name="signup-submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/signup.js"></script>
+</body>
+
+</html>

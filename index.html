@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script src="./js/font-awesome.js"></script>
+</head>
+
+<body>
+    <div id="login-container" class="container">
+        <span class="logo"><i class="fas fa-moon fa-3x"></i></span>
+        <div id="form-box">
+            <div class="title">
+                <h1><span class="light-color"> We Are </span>NUVA</h1>
+                <p class="subtitle">Welcome Back! Login to your account to view your today's clients.</p>
+            </div>
+            <form action="#" onsubmit="event.preventDefault()" id="form">
+                <div class="form-content">
+                    <i class="icon far fa-envelope fa-2x"></i>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input class="input-field click" type="email" name="email" id="email" required />
+                    </div>
+                    <i class="icon fa fa-lock fa-2x"></i>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input class="input-field click" minlength="8" type="password" name="password" id="password"
+                            required />
+                    </div>
+                </div>
+                <input class="btn btn-login" type="submit" value="Log in" id="login-submit" name="login-submit">
+            </form>
+            <a href="./signup.html">Sign Up</a>
+        </div>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

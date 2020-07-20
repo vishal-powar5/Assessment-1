@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #5dbcd2 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    color: #fff !important;
+}
+
+.light-color {
+    color: #aaccdd;
+}
+.dark-color{
+    color:#333;
+}
+/* moon logo in login form */
+.logo {
+    display: inline-block;
+    color: #fff;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+/* label icons for input fields */
+.icon {
+    padding: 0.1rem;
+    margin-top: 0.7rem;
+    margin-left: 0.2rem;
+    width: 15%;
+    float: left;
+}
+
+/* login form title */
+.title{
+    justify-self: left;
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* login form subtitle */
+.subtitle {
+    display: inline-block;
+    width: 17rem;
+    line-height: 1.8;
+    opacity: 0.6;
+
+}
+
+.container{
+    max-width: 600px;
+    min-height: 566px;
+    margin: 5rem auto;
+    border-radius: 10px;
+}
+/*entire container for login-signup form */
+#login-container {
+    background: url('../images/login-back.jpg') no-repeat center center/cover;
+}
+
+.align-center{
+    text-align: center;
+    justify-self: center;
+}
+/* user list container */
+#list-container{
+    background-color: cyan;
+}
+
+/* profile-container */
+#profile-container{
+    max-width: 400px !important;
+    background-color:powderblue;
+    padding: 0;
+    margin: 7rem auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+}
+
+/* only form out of container */
+#form-box {
+    min-height: 566px;
+    padding: 1.6rem 2.4rem 1.6rem 1.6rem;
+    float: right;
+    width: 70%;
+    color: black;
+    border-radius: 0 10px 10px 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* arrenging fields in form */
+.form-content {
+    box-sizing: border-box;
+    padding: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+/* for every input */
+#form-group {
+    width: 70%;
+    float: right;
+}
+
+/* labels for inputs */
+label{
+    font-weight: 500;
+}
+
+/* input fields */
+.input-field {
+    line-height: 1.8;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    border-bottom: solid #3377cc 1px;
+    padding:0.1rem 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* button */
+.btn {
+    width: 40%;
+    padding: 0;
+    margin: 0;
+    background-color: #44bcd8;
+    border: none;
+    border-radius: 1.4rem;
+    height: 2.6rem;
+    color: #fff;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+.btn:hover{
+    background-color: #3377cc;
+}
+.btn:focus{
+    outline: none;
+}
+
+/* login-signup button posiotion */
+.btn-login {
+    float: right;
+    margin-top: 1.4rem;
+}
+
+/* links in login-signup form */
+a{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+a:hover{
+    color:#3377cc;
+}
+
+/* user-list*/
+#list{
+    background-color: #fff;
+    min-height: 480px;
+    border-radius: 0 0 10px 10px;
+    color: #333;
+    padding:0.7rem 0.5rem;
+    overflow: auto;
+}
+
+/* user-list-item */
+.list-item{
+    margin:0.4rem 0.2rem;
+    padding:0.3rem;
+    border: solid #347821 1px;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/* user-client-name */
+#client-name{
+    margin-left: 2rem;
+    font-weight: 700;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    padding:0 0.1rem;
+}
+
+/* user-client-city-location */
+#client-city{
+    float: right;
+    margin-right: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    padding:0 0.1rem;
+    margin-top: 0.5rem;
+}
+
+/* user-view-card */
+
+/* profile-pic */
+#profile-pic{
+    height: 50%;
+    width: 50%;
+    margin:1rem 0;
+    padding:2rem;
+    border-radius: 50%;
+    background-color:tan;
+}
+
+img{
+    float: center;
+    padding: 0.5rem;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+/* profile-info */
+#profile-info{
+    height: 75%;
+    width: 100%;
+    background-color: #f8edacec;
+    color:#000000;
+    border-top: 1px solid #333;
+    overflow: auto;
+    padding-left: 0.6rem;
+}
+#profile-info > div{
+    margin:0.9rem 0.2rem;
+}
+
+/* user-name */
+#name{
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.9;
+    padding-left: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.info-placing{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0 0 3rem 2rem;
+}
+
+/* Operate Buttons */
+#operate-buttons{
+    justify-self: flex-end;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:1rem;
+    margin:0 2rem;
+    background-color: #5a5223ec;
+    border-radius:0 0 10px 10px;
+}
+
+.operate{
+    cursor: pointer;
+}
+
+.like-click{
+    color:red;
+}
+.operate-click{
+    border: none;
+    background: none;
+    color:#fff;
+    padding: 0.2rem;
+}
+.click:focus{
+    outline: none;
+    border-color: #77b7eb;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.click-red:focus{
+    outline: none;
+    border-color: #d88333;
+    box-shadow: 0 0 10px #a88922;
+}
+
+/* Modals */
+#myModal{
+    color:black;
+    font-size: 1.7rem;
+}
+
+#modal-submit-btn{
+    text-align: right;
+}
+.modal-submit{
+    width: 9rem;
+    height: 3.7rem;
+    border-radius: 10px;
+    font-size: 1.7rem;
+    line-height: 1.8;
+}
