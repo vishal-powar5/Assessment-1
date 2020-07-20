@@ -50,6 +50,12 @@ body {
     opacity: 0.6;
 
 }
+/* Error Message */
+#email-message,#password-message{
+    opacity: 0.8;
+    font-size: 0.8rem;
+    color:#c94831
+}
 
 .container{
     max-width: 600px;
@@ -81,6 +87,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content:start;
+    align-items: center;
+}
+
+/* navigation */
+#nav{
+    height: 10%;
+    width: 98%;
+    margin:0.3rem;
+    padding: 0.2rem;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 

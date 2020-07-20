@@ -9,6 +9,7 @@ submitEle.addEventListener('click', (e) => {
         let credentials = JSON.parse(localStorage.getItem(email))
         if (credentials["password"] === password) {
             generateData().then((data) => {
+                localStorage.setItem("current_user", email)
                 location.assign('user_list.html')
             }).catch((e) => {
                 alert("Loading Error.!")
@@ -18,6 +19,21 @@ submitEle.addEventListener('click', (e) => {
         }
     } else {
         alert("Something went wrong.!")
+    }
+})
+
+emailEle.addEventListener('change', (e) => {
+    if (!emailValidate(e.target.value) && e.target.value !== "") {
+        document.querySelector('#email-message').textContent = "Invalid Email"
+    } else {
+        document.querySelector('#email-message').textContent = ""
+    }
+})
+passwordEle.addEventListener('change', (e) => {
+    if (!(e.target.value.length >= 8) && e.target.value !== "") {
+        document.querySelector('#password-message').textContent = "password must contain 8 or more characters."
+    } else {
+        document.querySelector('#password-message').textContent = ""
     }
 })
 

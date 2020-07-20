@@ -33,14 +33,14 @@ document.querySelector('#delete').addEventListener('click', (e) => {
     }
 })
 
-document.querySelector('#submit-modal').addEventListener('click', (e) => {
-    const name = document.querySelector('#Name')
-    const email = document.querySelector('#Email')
-    const phone = document.querySelector('#Mobile')
-    const website = document.querySelector('#web')
-    const address = document.querySelector('#City')
-    const company = document.querySelector('#company-name')
+const name = document.querySelector('#Name')
+const email = document.querySelector('#Email')
+const phone = document.querySelector('#Mobile')
+const website = document.querySelector('#web')
+const address = document.querySelector('#City')
+const company = document.querySelector('#company-name')
 
+document.querySelector('#submit-modal').addEventListener('click', (e) => {
     if (name.value !== "") {
         user_data[current]["name"] = name.value
     }
@@ -65,6 +65,28 @@ document.querySelector('#submit-modal').addEventListener('click', (e) => {
     $('#myModal').modal('hide');
 })
 
+document.querySelector('#edit').addEventListener('click', (e) => {
+    name.value = user_data[current]["name"];
+    email.value = user_data[current]["email"];
+    phone.value = user_data[current]["phone"];
+    website.value = user_data[current]["website"];
+    address.value = user_data[current]["address"]["city"];
+    company.value = user_data[current]["company"]["name"];
+})
+
+document.querySelector('#back-button').addEventListener('click', (e) => {
+    location.assign('user_list.html')
+})
+
+document.querySelector('#logout').addEventListener('click', (e) => {
+    localStorage.removeItem("current_user")
+    location.assign('index.html')
+})
+
 window.onload = () => {
-    load_DOM()
+    if (localStorage.getItem("current_user") == undefined) {
+        location.assign('index.html')
+    } else {
+        load_DOM()
+    }
 }

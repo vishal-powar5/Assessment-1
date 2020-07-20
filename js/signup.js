@@ -22,6 +22,21 @@ submitEle.addEventListener('click', (e) => {
     }
 })
 
+emailEle.addEventListener('change', (e) => {
+    if (!emailValidate(e.target.value) && e.target.value !== "") {
+        document.querySelector('#email-message').textContent = "Invalid Email"
+    } else {
+        document.querySelector('#email-message').textContent = ""
+    }
+})
+passwordEle.addEventListener('change', (e) => {
+    if (!(e.target.value.length >= 8) && e.target.value !== "") {
+        document.querySelector('#password-message').textContent = "password must contain 8 or more characters."
+    } else {
+        document.querySelector('#password-message').textContent = ""
+    }
+})
+
 const emailValidate = function (data) {
     const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     console.log(data)
